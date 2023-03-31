@@ -9,12 +9,7 @@ import javax.imageio.ImageIO;
 public class StickerGenerator {
 
     public void create(InputStream inputStream, String fileName) throws Exception {
-
-        // Image read
-        // InputStream inputStream = new FileInputStream(new
-        // File("input/movie-big.jpg"));
-        // InputStream inputStream = new
-        // URL("https://m.media-amazon.com/images/I/71715eBi1sL._AC_SL1000_.jpg").openStream();
+       
         BufferedImage originalImage = ImageIO.read(inputStream);
         int width = originalImage.getWidth();
         int height = originalImage.getHeight();
